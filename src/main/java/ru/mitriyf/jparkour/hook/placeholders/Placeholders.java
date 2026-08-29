@@ -106,6 +106,9 @@ public class Placeholders extends PlaceholderExpansion {
             MemberData memberData = game.getMemberDataMap().get(uuid);
             SchematicMemberData schematicMemberData = memberData.getSchematicMemberData();
             switch (args[0].toLowerCase()) {
+                case "playerid": {
+                    return String.valueOf(memberData.getId());
+                }
                 case "status": {
                     return memberData.getStatus();
                 }
@@ -128,7 +131,7 @@ public class Placeholders extends PlaceholderExpansion {
                     return schematicMemberData.getMaxRights() + "";
                 }
                 default: {
-                    return "status, id, map, tops, lefts, rights, maxLefts, maxRights";
+                    return "playerid, status, id, map, tops, lefts, rights, maxLefts, maxRights";
                 }
             }
         }
@@ -157,6 +160,6 @@ public class Placeholders extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getVersion() {
-        return "1.8";
+        return "1.9";
     }
 }
