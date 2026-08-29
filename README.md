@@ -54,6 +54,7 @@ Finish the race, find out your score, and return home!
   - Placeholders:
     - %jparkour_map% - Displays the name of the map.
     - %jparkour_id% - Displays the ID of the map.
+    - %jparkour_playerid% - Display the player's ID.
     - %jparkour_status% - Displays the status of the map.
     - %jparkour_lefts% - Displays the number of clicks on the stand.
     - %jparkour_maxlefts% - Displays the maximum number of clicks on the stand.
